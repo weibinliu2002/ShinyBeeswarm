@@ -251,3 +251,4 @@ ui <- navbarPage(title = "Mantel-test",
                  ),
                  tabPanel("Help", includeMarkdown("README.md")))
 
+
