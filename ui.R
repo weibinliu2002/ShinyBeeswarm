@@ -350,22 +350,6 @@ server <- function(input, output, session) {
                                             contentType = 'image/svg')
     })
   })
-  observe({
-    ## *** Download example data ***
-    output$Download1 <- downloadHandler(filename <- function() {
-      paste('data.txt')
-    },
-    content <- function(file) {
-      input_file <- "data.txt"
-      exampl <- fread(input_file)
-      write.table(
-        exampl,
-        file = file,
-        row.names = F,
-        col.names = T,
-        quote = F
-      )
-    }, contentType = 'text/csv')
-  })
+ 
 }
-shinyApp(ui = ui, server = server)
+
