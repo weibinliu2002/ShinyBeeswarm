@@ -1,0 +1,13 @@
+name: shinyMantel-test
+title: shinyMantel-test
+username: liyang123
+account: liyang123
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12786212
+bundleId: 9130758
+url: https://liyang123.shinyapps.io/shinyMantel-test/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData
