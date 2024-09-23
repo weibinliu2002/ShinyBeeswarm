@@ -1,3 +1,4 @@
+# ShinyMantel-test
 ## **Help of  shinyBeeswarm** 
 
 &#8195;This is the help for Shiny application presented in "shinyBeeswarm"：make beeswarm plot in R with shiny .This document can solve some common problems encountered by users.
@@ -30,4 +31,4 @@ it also supports you to download PDF and SVG files, and can adjust the download 
 # 2.Download
 >After editing the beeswarm, you can download the beeswarm to the local, where the default size is 600 long and 600 wide, which can be modified through the image download. This application provides two Download File formats, pdf and svg File formats, the user can click "Download PDF File" and "download SVG file" and then choose to download according to preferences and needs.
 
-# ShinyMantel-test
+

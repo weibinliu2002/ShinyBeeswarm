@@ -9,7 +9,7 @@ library(shiny)
 library(shinyBS)
 library(data.table)
 library(markdown)
-ui <- navbarPage(title = "Mantel-test",
+ui <- navbarPage(title = "ShinyBeeswarm",
                  tabPanel(
                    "Corrplot",
                    tabPanel(
