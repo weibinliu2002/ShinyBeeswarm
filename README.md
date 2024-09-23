@@ -1,4 +1,4 @@
-# ShinyMantel-test
+# ShinyBeeswarm
 ## **Help of  shinyBeeswarm** 
 
 &#8195;This is the help for Shiny application presented in "shinyBeeswarm"：make beeswarm plot in R with shiny .This document can solve some common problems encountered by users.
