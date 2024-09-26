@@ -239,7 +239,7 @@ ui <- navbarPage(title = "ShinyBeeswarm",
                        numericInput("h", "图形高度", value = "600"),
                        numericInput("w", "图形宽度", value = "800"),
                        actionButton("action",
-                                    label = "Go")
+                                    label = "运行")
                      ),
                      mainPanel(
                        downloadButton("downloadpdf", "PDF 下载"),

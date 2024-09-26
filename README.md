@@ -1,34 +1,32 @@
-# ShinyBeeswarm
-## **Help of  ShinyBeeswarm** 
+# **ShinyBeeswarm**
 
-&#8195;This is the help for Shiny application presented in "ShinyBeeswarm"：make beeswarm plot in R with shiny .This document can solve some common problems encountered by users.
-## **What is ShinyBeeswarm?**
 
-&#8195;This is a tool for beeswarm. ShinyBeeswarm is good at details, 
-including the title, color choice, image size, etc. 
-it also supports you to download PDF and SVG files, and can adjust the download file size.
+&#8195;这是 Shiny 应用程序 “ShinyBeeswarm” 的帮助内容：用 shiny 在 R 中制作蜜蜂图 。本文档可以解决用户遇到的一些常见问题。
+## **关于 ShinyBeeswarm**
 
-## **How to use ShinyBeeswarm?**
+&#8195;ShinyBeeswarm是一个在线绘制蜜蜂图的工具。用户可以通过软件更改蜜蜂图的标题，颜色，图像大小等。对于绘制的图形可以调整大小，导出为PDF格式和SVG格式。 
+
+## **ShinyBeeswarm 使用方法**
 >
-## **1.1 upload data**
->The user can choose to upload the file or use the sample file according to the requirements, and the dataset should contain two columns, the first column is the location of the points, the second column represents a different sequence of points, and the third column is a different color of the points. The user can click "Select file" to upload the file, and then click Browse to upload the local data; If the user wants to understand the data format and the graph effect drawn, he can click Download example data to download the sample file, and then click Browse to upload the sample data.
-## **1.2 Appearance pattern**
->Click go to run the shiny program, which displays a beeswarm graph drawn with the uploaded data.
-## **1.3 Point size**
->The user needs to be able to click to expand the shape bar and change the size of the point by swiping.
-## **1.4 Point shape**
->The user needs to be able to click to expand the shape bar and change the shape of the point by selecting it.
-## **1.5 Graphic orientation**
->The user needs to click the direction bar and select the default direction of the graph, the left direction and the right direction.
-## **1.6 The organizational details of the graphics**
->The user can choose to improve the organizational details of the graphics. Note that priority can be changed when method is set to swarm. corral can be changed when method is selected to swarm and priority is selected to random.
-## **1.7 Add title**
->Users need to click on the title bar, enter and add their own title.
-## **1.8 Modify the X - and Y-axis headings**
->Users need to click on the title bar and select the X-axis and Y-axis titles to modify.
-### **1.9 Font modification**
->Users can modify the font and size by clicking on the font bar and selecting the title, X axis,Y axis title, etc.
+## **1.1 上传数据**
+>用户可以根据需求选择上传文件或使用示例文件，数据集应包含两列，第一列是点的位置，第二列表示不同的点序列，第三列是不同颜色的点。用户可以点击“选择文件”上传文件，然后点击“Browse”上传本地数据;如果用户想了解数据格式和绘制的图效，可以单击 "示例文件" 下载示例文件，然后单击 "Browse" 上传示例数据。
+## **1.2 运行**
+>单击“运行”运行ShinyBeeswarm程序，程序显示使用上传的数据绘制的蜂群图。
+## **1.3 点的大小**
+>用户通过单击展开形状修改栏，通过滑动更改点的大小。
+## **1.4 点的形状**
+>用户通过单击展开形状修改栏，并通过选择点来更改点的形状。
+## **1.5 图形方向**
+>用户需要点击方向修改栏，选择图表的默认方向，左方向和右方向。
+## **1.6 图形的细节**
+>用户可以选择改进图形的细节。请注意，当点的排列方式设置为 swarm 时，可以更改点的布局方法。当点的排列方式选择 为 swarm （群）且点的布局方法为 random 时，可以更改 corral。
+## **1.7 添加标题**
+>用户需要点击标题栏，输入并添加自己的标题。
+## **1.8 修改 X 轴和 Y 轴标题**
+>用户需要点击标题栏，可以对X轴、Y轴的标题进行修改添加。
+## **1.9 字体**
+>用户可以通过单击字体栏并选择标题、X 轴、Y 轴标题等来修改字体和大小。
 # 2.Download
->After editing the beeswarm, you can download the beeswarm to the local, where the default size is 600 long and 600 wide, which can be modified through the image download. This application provides two Download File formats, pdf and svg File formats, the user can click "PDF 下载" and "SVG 下载" and then choose to download according to preferences and needs.
+>编辑完蜜蜂图后，就可以把蜜蜂图下载到本地了，这里默认大小是 600 长 800 宽，可以通过图片下载来修改。此应用程序提供两种下载文件格式，pdf 和 svg 文件格式，用户可以点击“PDF 下载”和“SVG 下载”，然后根据喜好和需要选择下载。
 
 
