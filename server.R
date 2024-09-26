@@ -15,10 +15,10 @@ server <- function(input, output, session) {
           cex = 1,
           size = input$slider1,
           method = input$select8,
-          priority = input$select9,
-          corral = input$select10,
+          priority = input$select9,#点布局的方法
+          corral = input$select10,#调整横向过宽的点
           color = Group2,
-          side = as.numeric(input$select7),
+          side = as.numeric(input$select7),#抖动的方向 ，
           pch = as.numeric(input$select6)
         ) +
         scale_fill_manual(values = Group2, name = 'Group2') +
@@ -36,12 +36,12 @@ server <- function(input, output, session) {
             family = input$t2
           ),
           axis.line = element_blank(),
-          axis.ticks = element_line(size = 0.6, colour = "gray30"),
+          axis.ticks = element_line(linewidth = 0.6, colour = "gray30"),
           axis.ticks.length = unit(1.5, units = "mm"),
           axis.title.x = ggplot2::element_text(
             size = input$slider5,
             face = input$f4,
-            vjust = 3,
+            vjust = 0,
             family = input$t4
           ),
           axis.title.y = ggplot2::element_text(

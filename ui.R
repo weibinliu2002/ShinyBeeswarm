@@ -16,16 +16,16 @@ ui <- navbarPage(title = "ShinyBeeswarm",
                      "Chord Diagram",
                      sidebarPanel(
                        fileInput("file", h4("Upload Data :")),
-                       downloadButton("Download1", "Download example data"),
+                       downloadButton("Download1", "示例数据"),
                        checkboxInput("shape", "形状", FALSE) ,
                        conditionalPanel(
                          condition = "input.shape",
                          sliderInput(
                            "slider1",
-                           label = "图形大小",
+                           label = "图形点的大小",
                            min = 0,
                            max = 5,
-                           value = 1,
+                           value = 1.5,
                            step = 0.1
                          ),
                          selectInput(
@@ -44,18 +44,18 @@ ui <- navbarPage(title = "ShinyBeeswarm",
                          condition = "input.others",
                          selectInput(
                            "select7",
-                           label = "朝向",
+                           label = h5("朝向"),
                            choices = list("默认" = 0, "向右" = 1, "向左" = -1)
                          ),
                          selectInput(
                            "select8",
-                           label = "method ",
+                           label = h5("点的排列方式 "),
                            choices = list("swarm", "square", "hex", "center")
                          ),
                          selectInput(
                            "select9",
-                           h4(
-                             "priority:",
+                           h5(
+                             "点的布局方法:",
                              bsButton(
                                "bs0",
                                label = "",
@@ -66,24 +66,24 @@ ui <- navbarPage(title = "ShinyBeeswarm",
                            ),
                            choices = list("descending", "random", "density", "none")
                          ),
-                         bsPopover("bs0", "当method选为swarm时，可以更改priority。", trigger = "focus"),
+                         bsPopover("bs0", "当点的排列方式选为swarm时，可以更改点的布局方法。", trigger = "focus"),
                          selectInput(
                            "select10",
-                           h4(
+                           h5(
                              "corral:",
                              bsButton(
                                "bs1",
                                label = "",
                                icon = icon("question"),
                                style = "info",
-                               size = "small"
+                               size = "small",
                              )
                            ),
                            choices = list("omit", "random", "wrap", "gutter", "none")
                          ),
                          bsPopover(
                            "bs1",
-                           "当method选为swarm并且priority选为random时，可以更改corral。",
+                           "用于调整横向放置过宽的点的方法，当排列方式选为swarm并且布局方法选为random时可以更改。",
                            trigger = "focus"
                          )
                        ),
@@ -91,9 +91,9 @@ ui <- navbarPage(title = "ShinyBeeswarm",
                        conditionalPanel(
                          condition = "input.lollipoptitle",
                          textInput("text1", "标题:",
-                                   value = c("")),
-                         textInput("MyX", "Plot x axis title:", value = c("My X-axis label")),
-                         textInput("MyY", "Plot y axis title:", value = c("My Y-axis label")),
+                                   value = c("Beeswarm")),
+                         textInput("MyX", "x轴标题:", value = c("")),
+                         textInput("MyY", "y轴标题:", value = c("")),
                        ),
                        checkboxInput("condition1", "字体", FALSE),
                        conditionalPanel(
@@ -131,7 +131,7 @@ ui <- navbarPage(title = "ShinyBeeswarm",
                              label = "标题",
                              min = 1,
                              max = 40,
-                             value = 15
+                             value = 30
                            )
                          ),
                          conditionalPanel(
@@ -156,7 +156,7 @@ ui <- navbarPage(title = "ShinyBeeswarm",
                              label = "横坐标字体大小",
                              min = 5,
                              max = 40,
-                             value = 10
+                             value = 15
                            )
                          ),
                          conditionalPanel(
@@ -181,7 +181,7 @@ ui <- navbarPage(title = "ShinyBeeswarm",
                              label = "纵坐标字体大小",
                              min = 5,
                              max = 40,
-                             value = 10
+                             value = 15
                            )
                          ),
                          conditionalPanel(
@@ -206,7 +206,7 @@ ui <- navbarPage(title = "ShinyBeeswarm",
                              label = "横坐标标题字体大小",
                              min = 1,
                              max = 40,
-                             value = 10
+                             value = 20
                            )
                          ),
                          conditionalPanel(
@@ -231,24 +231,21 @@ ui <- navbarPage(title = "ShinyBeeswarm",
                              label = "纵坐标标题字体大小",
                              min = 1,
                              max = 40,
-                             value = 10
+                             value = 20
                            )
                          ),
                        ),
-                       
                        h4("图片下载"),
-                       numericInput("h", "Plot download height", value = "600"),
-                       numericInput("w", "Plot download width", value = "600"),
+                       numericInput("h", "图形高度", value = "600"),
+                       numericInput("w", "图形宽度", value = "800"),
                        actionButton("action",
                                     label = "Go")
                      ),
                      mainPanel(
-                       downloadButton("downloadpdf", "Download pdf-file"),
-                       downloadButton("downloadsvg", "Download svg-file"),
-                       plotOutput("p1", height = 600, width = 950)
+                       downloadButton("downloadpdf", "PDF 下载"),
+                       downloadButton("downloadsvg", "SVG 下载"),
+                       plotOutput("p1", height = 1000, width = 1000)
                      )
                    )
                  ),
                  tabPanel("Help", includeMarkdown("README.md")))
-
-
