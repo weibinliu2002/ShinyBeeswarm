@@ -236,15 +236,15 @@ ui <- navbarPage(title = "ShinyBeeswarm",
                          ),
                        ),
                        h4("图片下载"),
-                       numericInput("h", "图形高度", value = "600"),
-                       numericInput("w", "图形宽度", value = "800"),
+                       numericInput("h", "图形高度", value = "800"),
+                       numericInput("w", "图形宽度", value = "900"),
                        actionButton("action",
                                     label = "运行")
                      ),
                      mainPanel(
                        downloadButton("downloadpdf", "PDF 下载"),
                        downloadButton("downloadsvg", "SVG 下载"),
-                       plotOutput("p1", height = 1000, width = 1000)
+                       plotOutput("p1")
                      )
                    )
                  ),
